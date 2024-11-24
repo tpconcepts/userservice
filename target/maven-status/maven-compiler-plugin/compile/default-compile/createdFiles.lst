@@ -1,0 +1,6 @@
+com\library\userservice\service\UserService.class
+com\library\userservice\dto\UserDTO.class
+com\library\userservice\UserserviceApplication.class
+com\library\userservice\repository\UserRepository.class
+com\library\userservice\controller\UserController.class
+com\library\userservice\model\User.class
