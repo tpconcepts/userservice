@@ -12,7 +12,7 @@ public class User {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Short id;
     
     @NotBlank
     @Column(nullable = false)
@@ -61,11 +61,11 @@ public class User {
         updatedAt = LocalDateTime.now();
     }
 
-	public Long getId() {
+	public Short getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Short id) {
 		this.id = id;
 	}
 
