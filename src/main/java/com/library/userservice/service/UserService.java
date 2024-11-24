@@ -41,7 +41,8 @@ public class UserService {
         notificationDTO.setSubject("Welcome to Book Management System");
         notificationDTO.setMessage("You have been registered successfully");
         notificationDTO.setReceiverEmail(savedUser.getEmail());
-        restTemplate.postForEntity("http://EMAIL-SERVICE/api/notifications/notify/"+savedUser.getId(), notificationDTO, String.class);
+        restTemplate.postForEntity("http://EMAIL-SERVICE/api/notifications/notify/"+savedUser.getId(),
+                notificationDTO, String.class);
         return savedUser;
     }
     
